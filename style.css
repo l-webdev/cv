@@ -2,21 +2,47 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+
 body {
   margin: 0px;
 }
+
 h1,
 h2,
 h3 {
   font-family: "Rubik Mono One", sans-serif;
 }
+
 .main {
   padding: 16px;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .header {
   text-align: center;
   background-color: lightcyan;
   padding: 40px 16px;
+}
+
+article + article {
+  margin-top: 40px;
+  border-top: solid teal;
+}
+
+.nav-link + .nav-link {
+  margin-left: 16px;
+}
+
+.nav-link {
+  color: teal;
+  padding: 8px;
+}
+
+.nav-link:hover {
+  background-color: lavender;
+}
+
+.nav-link:active {
+  background-color: darkgreen;
 }
