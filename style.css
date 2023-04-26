@@ -46,3 +46,12 @@ article + article {
 .nav-link:active {
   background-color: darkgreen;
 }
+
+::selection {
+  background-color: black;
+  color: lavenderblush;
+}
+
+.profession::after {
+  content: "💻";
+}
