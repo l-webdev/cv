@@ -34,6 +34,11 @@ article + article {
   border-top: solid teal;
 }
 
+main > article {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .nav-link + .nav-link {
   margin-left: 16px;
 }
@@ -58,6 +63,20 @@ article + article {
 
 .profession::after {
   content: "💻";
+}
+
+.hire-me {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px;
+  background: black;
+  color: white;
+}
+
+.article-heading {
+  position: relative;
+  left: -16px;
 }
 
 .employment-heading {
