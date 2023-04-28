@@ -59,3 +59,11 @@ article + article {
 .profession::after {
   content: "💻";
 }
+
+.employment-heading {
+  display: inline-block;
+}
+
+.employment-subheading {
+  display: inline-block;
+}
