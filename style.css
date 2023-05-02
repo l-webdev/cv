@@ -5,8 +5,12 @@
   font-family: "Rubik", sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  margin: 0px;
+  margin: 0rem;
 }
 
 h1,
@@ -18,34 +22,46 @@ h3 {
 /* || Specific styles */
 
 .main {
-  padding: 16px;
-  max-width: 800px;
+  padding: 1rem;
+  max-width: 70ch;
   margin: 0 auto;
 }
 
 .header {
   text-align: center;
   background-color: lightcyan;
-  padding: 40px 16px;
+  padding: 2.5rem 1rem;
+}
+
+.header-group {
+  font-size: 4rem;
+}
+
+.header-title {
+  font-size: 1em;
+}
+
+.profession {
+  font-size: 0.25em;
 }
 
 article + article {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   border-top: solid teal;
 }
 
 main > article {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .nav-link + .nav-link {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .nav-link {
   color: teal;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .nav-link:hover {
@@ -67,16 +83,16 @@ main > article {
 
 .hire-me {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  padding: 8px;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
   background: black;
   color: white;
 }
 
 .article-heading {
   position: relative;
-  left: -16px;
+  left: -1rem;
 }
 
 .employment-heading {
