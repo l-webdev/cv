@@ -102,3 +102,30 @@ main > article {
 .employment-subheading {
   display: inline-block;
 }
+
+/* || Media queries */
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 1.25rem;
+  }
+  article + article {
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1.5rem;
+  }
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me,
+  .navigation {
+    display: none;
+  }
+}
