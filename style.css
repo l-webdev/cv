@@ -45,6 +45,11 @@ h3 {
   font-size: 0.25em;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
 article + article {
   margin-top: 2.5rem;
   border-top: solid teal;
@@ -55,9 +60,11 @@ main > article {
   padding-right: 1rem;
 }
 
-.nav-link + .nav-link {
+-.nav-link + .nav-link {
   margin-left: 1rem;
 }
+/*wird nicht mehr angewendet,
+nachdem Flexbox aktiv ist.*/
 
 .nav-link {
   color: teal;
@@ -95,14 +102,6 @@ main > article {
   left: -1rem;
 }
 
-.employment-heading {
-  display: inline-block;
-}
-
-.employment-subheading {
-  display: inline-block;
-}
-
 /* || Media queries */
 
 @media screen and (min-width: 786px) {
@@ -111,6 +110,23 @@ main > article {
   }
   article + article {
     margin-top: 3.5rem;
+  }
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+ 
+  }
+  .employment-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .employment-header > * {
+    -flex-grow: 1;
+  }
+  .employment-subheading {
+    min-width: 8ch;
   }
 }
 
