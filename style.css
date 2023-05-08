@@ -29,7 +29,7 @@ h3 {
 
 .header {
   text-align: center;
-  background-color: lightcyan;
+  background-image: linear-gradient(135deg, lightcyan 50%, teal 90%) ;
   padding: 2.5rem 1rem;
 }
 
@@ -67,7 +67,7 @@ main > article {
 nachdem Flexbox aktiv ist.*/
 
 .nav-link {
-  color: teal;
+  color: rgb(5, 50, 50);
   padding: 0.5rem;
 }
 
@@ -100,6 +100,12 @@ nachdem Flexbox aktiv ist.*/
 .article-heading {
   position: relative;
   left: -1rem;
+}
+
+.footer {
+  background-color: lavender;
+  text-align: center;
+  padding: 2em;
 }
 
 /* || Media queries */
