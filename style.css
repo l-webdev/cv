@@ -42,7 +42,11 @@ h3 {
 
 .header {
   text-align: center;
-  background-image: linear-gradient(135deg, var(--main-color-light) 50%, var(--main-color) 90%) ;
+  background-image: linear-gradient(
+    135deg,
+    var(--main-color-light) 50%,
+    var(--main-color) 90%
+  );
   padding: 2.5rem 1rem;
 }
 
@@ -76,14 +80,20 @@ main > article {
 .nav-link {
   color: var(--main-color-darkest);
   padding: 0.5rem;
+  transition: background-color 0.5s;
 }
 
 .nav-link:hover {
-  background-color: var( --contrast-color);
+  background-color: var(--contrast-color);
 }
 
 .nav-link:active {
   background-color: var(--main-color-dark);
+}
+
+.nav-link:focus {
+  background-color: var(--contrast-color-sat);
+  border-style: double;
 }
 
 ::selection {
@@ -129,18 +139,16 @@ main > article {
     justify-content: center;
     gap: 2rem;
   }
- 
-  }
-  .employment-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .employment-header > * {
-    -flex-grow: 1;
-  }
-  .employment-subheading {
-    min-width: 8ch;
-  }
+}
+.employment-header {
+  display: flex;
+  justify-content: space-between;
+}
+.employment-header > * {
+  -flex-grow: 1;
+}
+.employment-subheading {
+  min-width: 8ch;
 }
 
 @media screen and (min-width: 992px) {
