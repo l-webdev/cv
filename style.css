@@ -5,6 +5,19 @@
   font-family: "Rubik", sans-serif;
 }
 
+:root {
+  --main-color: teal;
+  --main-color-light: lightcyan;
+  --main-color-dark: darkgreen;
+  --main-color-darkest: hsl(180, 82%, 11%);
+  --contrast-color: lavender;
+  --contrast-color-sat: lavenderblush;
+  --dark-backgr-color: black;
+  --dark-backgr-contrast: white;
+  --page-backgr-color: white;
+  --page-text-color: black;
+}
+
 html {
   font-size: 16px;
 }
@@ -29,7 +42,7 @@ h3 {
 
 .header {
   text-align: center;
-  background-image: linear-gradient(135deg, lightcyan 50%, teal 90%) ;
+  background-image: linear-gradient(135deg, var(--main-color-light) 50%, var(--main-color) 90%) ;
   padding: 2.5rem 1rem;
 }
 
@@ -52,7 +65,7 @@ h3 {
 
 article + article {
   margin-top: 2.5rem;
-  border-top: solid teal;
+  border-top: solid var(--main-color);
 }
 
 main > article {
@@ -60,28 +73,22 @@ main > article {
   padding-right: 1rem;
 }
 
--.nav-link + .nav-link {
-  margin-left: 1rem;
-}
-/*wird nicht mehr angewendet,
-nachdem Flexbox aktiv ist.*/
-
 .nav-link {
-  color: rgb(5, 50, 50);
+  color: var(--main-color-darkest);
   padding: 0.5rem;
 }
 
 .nav-link:hover {
-  background-color: lavender;
+  background-color: var( --contrast-color);
 }
 
 .nav-link:active {
-  background-color: darkgreen;
+  background-color: var(--main-color-dark);
 }
 
 ::selection {
-  background-color: black;
-  color: lavenderblush;
+  background-color: var(--dark-backgr-color);
+  color: var(--contrast-color-sat);
 }
 
 .profession::after {
@@ -93,8 +100,8 @@ nachdem Flexbox aktiv ist.*/
   top: 1rem;
   right: 1rem;
   padding: 0.5rem;
-  background: black;
-  color: white;
+  background: var(--dark-backgr-color);
+  color: var(--dark-backgr-contrast);
 }
 
 .article-heading {
@@ -103,7 +110,7 @@ nachdem Flexbox aktiv ist.*/
 }
 
 .footer {
-  background-color: lavender;
+  background-color: var(--contrast-color);
   text-align: center;
   padding: 2em;
 }
@@ -142,6 +149,13 @@ nachdem Flexbox aktiv ist.*/
   }
   .hire-me {
     position: fixed;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --page-backgr-color: black;
+    --page-text-color: white;
   }
 }
 
