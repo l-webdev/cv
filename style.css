@@ -112,6 +112,13 @@ main > article {
   padding: 0.5rem;
   background: var(--dark-backgr-color);
   color: var(--dark-backgr-contrast);
+  transform-origin: top right;
+  transition: 0.5s ease-in-out;
+}
+
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  transform: scale(1.25);
 }
 
 .article-heading {
